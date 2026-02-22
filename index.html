@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>MeetMe |📍</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="status-bar">Zjišťuji GPS...</div>
+        
+        <div id="map"></div> <div class="ui-panel">
+            <button id="shareBtn" class="main-btn">📍 Sdílet moji polohu</button>
+            
+            <div id="nav-options" style="display: none;">
+                <p>Někdo na tebe čeká! Vyber si dopravu:</p>
+                <div class="btn-group">
+                    <button onclick="navigate('transit')">🚋 MHD</button>
+                    <button onclick="navigate('walking')">🚶 Pěšky</button>
+                    <button onclick="navigate('driving')">🚗 Auto</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
